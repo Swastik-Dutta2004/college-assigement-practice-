@@ -2,7 +2,7 @@
 using namespace std ;
 class A{
     public:
-    void display() {
+      void display() {
         cout<<"it is class a";
     }
 };
@@ -14,7 +14,8 @@ class A{
  };
  main()
 {
-    B obj;
+   A*ptr; B obj;
+   ptr =& obj;
     obj.display();
     return 0;
 }
