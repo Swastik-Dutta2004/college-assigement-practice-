@@ -1,14 +1,14 @@
 #include<iostream>
 using namespace std;
-class subhamay; 
-class subhraneel{
-    private:
-    int money = 10;
-    friend void swastik (subhraneel,subhamay);
-};
+class subhraneel;
 class subhamay {
     private:
     int money = 20;
+    friend void swastik (subhraneel,subhamay);
+};
+class subhraneel{
+    private:
+    int money = 10;
     friend void swastik (subhraneel,subhamay);
 };
 void swastik (subhraneel r1,subhamay r2){
